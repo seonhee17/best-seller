@@ -60,10 +60,7 @@ export default async function Detail ({params}:{ params : {id :string}}){
       <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
          {
             bookList.results.books.map((book:IBook,index : Key)=>(
-                
-                <Book book={book}/>    
-
-
+                <Book key={book.primary_isbn13} book={book}/>    
             ))
         }
         </div>

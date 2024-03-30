@@ -4,7 +4,7 @@ import { IBook } from "../list/[id]/page"
 
 export function Book({book} :{book: IBook}) {
     return (
-      <div key={book.primary_isbn13}>
+     
       <Link href={book.amazon_product_url} className="group">
             <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-lg font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
               {book.rank}
@@ -23,6 +23,6 @@ export function Book({book} :{book: IBook}) {
              {/*  <p className="mt-1 text-lg font-medium text-gray-900">{book.price}</p>
               <p className="mt-1 text-lg font-medium text-gray-900">{book.price}</p> */}
       </Link>
-      </div>  
+    
     )
 } 
