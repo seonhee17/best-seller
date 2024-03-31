@@ -1,6 +1,6 @@
 import Image from "next/image";
 import profilePic from "../../public/images/casamila.jpeg"
-import Sans
+
 
 export default function About(){
     return (
